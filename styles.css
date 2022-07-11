@@ -115,6 +115,9 @@ p {
 @media (max-width: 1150px) {
   .container {
     height: auto;
+    flex: 100%;
+    margin-left: 5%;
+    margin-right: 5%;
   }
 
   .product-img {
