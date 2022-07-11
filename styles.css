@@ -1,0 +1,139 @@
+/* TAGS */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  min-height: 100vh;
+  background-color: hsl(30, 38%, 92%);
+}
+
+p {
+  font-size: 14px;
+}
+/* CLASS */
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  margin: auto;
+  width: 50%;
+}
+
+.product-img {
+  flex: 50%;
+}
+
+.product-img img {
+  width: 100%;
+}
+
+.img1 {
+  display: block;
+  border-radius: 25px 0 0 25px;
+}
+
+.img2 {
+  display: none;
+}
+
+.product {
+  background-color: hsl(0, 0%, 100%);
+  flex: 50%;
+  border-radius: 0 25px 25px 0;
+  padding: 5%;
+}
+
+.product-type {
+  letter-spacing: 3px;
+  font-family: 'Montserrat', sans-serif;
+  color: hsl(228, 12%, 48%);
+}
+
+.product-name {
+  font-family: "Fraunces", sans-serif;
+  font-weight: 700;
+}
+
+.product-description {
+  font-family: 'Montserrat', sans-serif;
+  color: hsl(228, 12%, 48%);
+}
+
+.price-new {
+  font-family: "Fraunces", sans-serif;
+  font-weight: 700;
+  display: inline-block;
+  color: hsl(158, 36%, 37%);
+}
+
+.price-old {
+  text-decoration: line-through;
+  font-family: 'Montserrat', sans-serif;
+  color: hsl(228, 12%, 48%);
+  display: inline-block;
+}
+
+.button-cart {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  font-size: 1em;
+  background-color: hsl(158, 36%, 37%);
+  color: hsl(0, 0%, 100%);
+  border: 0;
+  border-radius: 5px;
+  width: 100%;
+  height: 50px;
+  line-height: 1.5;
+  vertical-align: middle;
+  cursor: pointer;
+  transition: color 0.15s;
+}
+
+.button-cart:hover {
+  color: hsl(212, 21%, 14%);
+}
+
+.button-cart:active {
+  background-color: hsl(110, 36%, 37%);;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  flex: 100%;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+/* MEDIA QUERY */
+@media (max-width: 1150px) {
+  .container {
+    height: auto;
+  }
+
+  .product-img {
+    flex: 100%;
+  }
+
+  .product {
+    flex: 100%;
+    border-radius: 0 0 25px 25px;
+    overflow: hidden;
+  }
+
+  .img1 {
+    display: none;
+  }
+
+  .img2 {
+    display: block;
+    border-radius: 25px 25px 0 0;
+  }
+
+}
